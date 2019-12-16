@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 文字 -->
+    <meta charset="UTF-8">
+    <!-- viewportを読み込む=メディアクエリ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- サイトの権限者に関する記述 -->
+    <meta name="name" content="SIMチェンジ">
+     <!-- サイト説明に関する記述 -->
+    <meta name="description" content="格安SIM比較サイト「SIMチェンジ」は、格安SIMカードを比較することで、あなたにぴったりのSIM選びをサポートするサイトです。快適なスマホ生活にお役立て下さい。">
+    <!-- サイトのキーワードに関する記述 -->
+    <meta name="keywords" content="格安SIM,スマホ,">
+    <title>SIM診断コンテンツ</title>
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" type="text/css" href="../CSS/sim_shindan_top.css">
+    <!-- レスポンシブ・タブレット1000px以下の時スタイルシート -->
+     <link rel="stylesheet" href="../CSS/sim_shindan_top_tb.css">
+    <!-- レスポンシブ・スマホ670px以下の時スタイルシート -->
+     <link rel="stylesheet" href="../CSS/sim_shindan_top_sp.css">
+    <!-- ブートストラップアイコンに関する記述 -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <!-- トップページ -->
+  <body>
+    <div id="wrapper">
+      <!-- ヘッダー -->
+       <header>
+       </header>
+       <!-- メインボディ -->
+       <main>
+         <!-- ヘッダー直下トップセクション -->
+         <section class="top_wrapper">
+         </section>
+          <!-- フッター固定バナーセクション -->
+         <section class="fix_wrapper">
+           <!-- リスト番号 -->
+           <ul>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+           </ul>
+         </section>
+         <!-- メインボディ送信フォームボタン -->
+         <form action="/sim_shindan_result.html">
+           <!-- クエスチョンセクション -->
+           <section class="question_wrapper">
+             <!-- クエスチョン１ -->
+             <div id="q1">
+               <!-- 質問内容 -->
+                   <h2>
+                     <span class="number">1</span>
+                     <span class="text">お手持ちのスマホをそのまま利用しますか？</span>
+                   </h2>
+                   <!-- ボタン -->
+                   <div class="twoColumn">
+                     <input type="radio" id="q1-1" class name="" value="">
+                     <label for="q1-1" class="radio">そのまま利用する</label>
+                     <input type="radio" id="q1-2" class name="" value="">
+                     <label for="q1-2" class="radio">新規で購入する</label>
+                   </div>
+             </div>
+             <!-- クエスチョン２(パターン1) -->
+             <div id="q2-1" style="display: block;">
+               <!-- 質問内容 -->
+                   <h2>
+                     <span class="number">2</span>
+                     <span class="text">現在ご利用中の携帯会社はどこですか？</span>
+                   </h2>
+                   <!-- ボタン -->
+                   <div class="fourColumn">
+                     <input type="radio" id="q2-1-1" class name="" value="">
+                     <label for="q2-1-1" class="radio">docomo</label>
+                     <input type="radio" id="q2-1-2" class name="" value="">
+                     <label for="q2-1-2" class="radio">au</label>
+                     <input type="radio" id="q2-1-3" class name="" value="">
+                     <label for="q2-1-3" class="radio">SoftBank</label>
+                     <input type="radio" id="q2-1-4" class name="" value="">
+                     <label for="q2-1-4" class="radio">その他(ガラケー)</label>
+                   </div>
+             </div>
+             <!-- クエスチョン２(パターン2) -->
+             <div id="q2-2" style="display: block;">
+               <!-- 質問内容 -->
+                   <h2>
+                     <span class="number">2</span>
+                     <span class="text">ご希望のスマホはありますか？</span>
+                   </h2>
+                   <!-- ボタン -->
+                   <div class="twoColumn">
+                     <input type="radio" id="q2-2-1" class name="" value="">
+                     <label for="q2-2-1" class="radio">iPhone</label>
+                     <input type="radio" id="q2-2-2" class name="" value="">
+                     <label for="q2-2-2" class="radio">Android</label>
+                   </div>
+             </div>
+             <!-- クエスチョン３ -->
+             <div id="q3" style="display: block;">
+               <h2>
+                 <!-- 質問内容 -->
+                 <span class="number">3</span>
+                 <span class="text">あなたの利用スタイルに合ったデータ通信量はどれですか？</span>
+               </h2>
+               <!-- ボタン -->
+               <div class="twoColumn" >
+                 <!-- あえての2カラム -->
+                   <!-- ボタン1 -->
+                   <div>
+                     <ul class>
+                       <li>メールやLINEはテキストが中心</li>
+                       <li>ネットやSNSをほとんど利用しない</li>
+                     </ul>
+                   </div>
+                   <input type="radio" id="q3-1" class name="" value="">
+                   <label for="q3-1" class="radio">~3GB</label>
+                   <!-- ボタン2 -->
+                   <div>
+                     <ul class>
+                       <li>ネットやSNSを1日1～2時間ほど利用する</li>
+                       <li>動画はあまり観ない</li>
+                     </ul>
+                   </div>
+                   <input type="radio" id="q3-2" class name="" value="">
+                   <label for="q3-2" class="radio">~9GB</label>
+                   <!-- ボタン3 -->
+                   <div>
+                     <ul class style="display: block;">
+                       <li>ネットやSNSを頻繁に利用する</li>
+                       <li>動画を観る機会が多い</li>
+                       <li>家ではWiFiを使用する</li>
+                     </ul>
+                   </div>
+                   <input type="radio" id="q3-3" class name="" value="">
+                   <label for="q3-3" class="radio">~14GB</label>
+                   <!-- ボタン4 -->
+                   <div>
+                     <ul class>
+                       <li>動画を長時間観る</li>
+                       <li>WiFiは使用しないことが多い</li>
+                     </ul>
+                   </div>
+                   <input type="radio" id="q3-4" class name="" value="">
+                   <label for="q3-4" class="radio">14GB~</label>
+               </div>
+
+             </div>
+             <!-- クエスチョン４ -->
+             <div id="q4" style="display: block;">
+               <!-- 質問内容 -->
+                   <h2>
+                     <span class="number">4</span>
+                     <span class="text">音声通話は利用しますか？</span>
+                   </h2>
+                   <!-- ボタン -->
+                   <div class="twoColumn">
+                     <input type="radio" id="q4-1" class name="" value="">
+                     <label for="q4-1" class="radio">利用する（音声SIM）</label>
+                     <input type="radio" id="q4-2" class name="" value="">
+                     <label for="q4-2" class="radio">利用しない（データSIM）</label>
+                   </div>
+             </div>
+             <!-- クエスチョン５ -->
+             <div id="q5" style="display: block;">
+               <!-- 質問内容 -->
+                   <h2>
+                     <span class="number">5</span>
+                     <span class="text">SMSは利用しますか？</span>
+                   </h2>
+                   <!-- ボタン -->
+                   <div class="twoColumn">
+                     <input type="radio" id="q5-1" class name="" value="">
+                     <label for="q5-1" class="radio">利用する</label>
+                     <input type="radio" id="q5-2" class name="" value="">
+                     <label for="q5-2" class="radio">利用しない</label>
+                   </div>
+             </div>
+             <!-- 診断結果のボタン -->
+             <div id="a" class="button">
+               <input type="submit" id="" class="" value="診断結果を見る" disabled>
+               <!-- disabled=jQueryの記述？ボタンを押せないようにする -->
+             </div>
+           </section>
+         </form>
+         <!-- インフォセクション -->
+         <section class="info">
+
+             <!-- インフォ注意事項セクション -->
+             <section class="attention">
+               <h3>当サイトご利用にあたっての注意事項</h3>
+               <!-- 注意事項その1 -->
+                <div>
+                  <h4>当サイトについて</h4>
+                    <ul>
+                      <li>あああああああああああああ</li>
+                      <li>あああああああああああああ</li>
+                      <li>あああああああああああああ</li>
+                    </ul>
+                </div>
+               <!-- 注意事項その2 -->
+                <div>
+                  <h4>個人情報の取り扱いについて</h4>
+                    <ul>
+                      <li>あああああああああああああ</li>
+                      <li>あああああああああああああ</li>
+                      <li>あああああああああああああ</li>
+                    </ul>
+                </div>
+               <!-- 注意事項その3 -->
+                <div>
+                  <h4>当サイトご利用の注意事項</h4>
+                    <h5>免責事項</h5>
+                      <ul>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                      </ul>
+                    <h5>禁止事項</h5>
+                      <ul>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                      </ul>
+                    <h5>履歴情報</h5>
+                      <ul>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                      </ul>
+                    <h5>商標</h5>
+                      <ul>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                        <li>あああああああああああああ</li>
+                      </ul>
+                </div>
+             </section>
+             <!-- インフォISOセクション -->
+             <section class="iso">
+               <img src="" alt="">
+               <span>ISOを取得しています</span>
+               <p>あああああああああああああああああああ</p>
+             </section>
+             <!-- インフォリンクセクション -->
+             <section class="link">
+               <ul>
+               <!-- 運営情報 -->
+               <li><a href="#">運営会社</a></li>
+               <!-- プライバシーポリシー -->
+                <li><a href="#">プライバシーポリシー</a></li>
+               <!-- お問い合わせ -->
+                 <li><a href="#">お問い合わせ</a></li>
+               </ul>
+             </section>
+
+         </section>
+
+       </main>
+       <!-- フッター -->
+       <footer>
+         <p>Copyright © 2019 SIMチェンジ.All rights reserved.</p>
+       </footer>
+    </div>
+  </body>
+  <!-- トップページここまで -->
+</html>
