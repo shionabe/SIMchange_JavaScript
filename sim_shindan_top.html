@@ -13,7 +13,7 @@
     <meta name="keywords" content="格安SIM,スマホ,">
     <title>SIM診断コンテンツ</title>
     <!-- スタイルシートの読み込み -->
-    <link rel="stylesheet" type="text/css" href="../CSS/sim_shindan_top.css">
+    <link rel="stylesheet" type="text/css" href="CSS/sim_shindan_top.css">
     <!-- レスポンシブ・タブレット1000px以下の時スタイルシート -->
      <link rel="stylesheet" href="../CSS/sim_shindan_top_tb.css">
     <!-- レスポンシブ・スマホ670px以下の時スタイルシート -->
@@ -48,7 +48,7 @@
            <!-- クエスチョンセクション -->
            <section class="question_wrapper">
              <!-- クエスチョン１ -->
-             <div id="q1">
+             <div id="q1" class="q">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">1</span>
@@ -56,6 +56,7 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
+                     <!-- inputタグの「id属性」の値と同じにする事でラベルのテキストとラジオボタンを関連づけることができる -->
                      <input type="radio" id="q1-1" class name="" value="">
                      <label for="q1-1" class="radio">そのまま利用する</label>
                      <input type="radio" id="q1-2" class name="" value="">
@@ -63,7 +64,7 @@
                    </div>
              </div>
              <!-- クエスチョン２(パターン1) -->
-             <div id="q2-1" style="display: block;">
+             <div id="q2-1" class="q" style="display: block;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">2</span>
@@ -82,7 +83,7 @@
                    </div>
              </div>
              <!-- クエスチョン２(パターン2) -->
-             <div id="q2-2" style="display: block;">
+             <div id="q2-2" class="q" style="display: block;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">2</span>
@@ -97,7 +98,7 @@
                    </div>
              </div>
              <!-- クエスチョン３ -->
-             <div id="q3" style="display: block;">
+             <div id="q3" class="q" style="display: block;">
                <h2>
                  <!-- 質問内容 -->
                  <span class="number">3</span>
@@ -147,7 +148,7 @@
 
              </div>
              <!-- クエスチョン４ -->
-             <div id="q4" style="display: block;">
+             <div id="q4" class="q" style="display: block;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">4</span>
@@ -162,7 +163,7 @@
                    </div>
              </div>
              <!-- クエスチョン５ -->
-             <div id="q5" style="display: block;">
+             <div id="q5" class="q" style="display: block;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">5</span>
