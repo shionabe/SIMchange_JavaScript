@@ -15,9 +15,9 @@
     <!-- スタイルシートの読み込み -->
     <link rel="stylesheet" type="text/css" href="CSS/sim_shindan_top.css">
     <!-- レスポンシブ・タブレット1000px以下の時スタイルシート -->
-     <link rel="stylesheet" href="../CSS/sim_shindan_top_tb.css">
+     <link rel="stylesheet" href="CSS/sim_shindan_top_tb.css">
     <!-- レスポンシブ・スマホ670px以下の時スタイルシート -->
-     <link rel="stylesheet" href="../CSS/sim_shindan_top_sp.css">
+     <link rel="stylesheet" href="CSS/sim_shindan_top_sp.css">
     <!-- ブートストラップアイコンに関する記述 -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
@@ -57,14 +57,16 @@
                    <!-- ボタン -->
                    <div class="twoColumn">
                      <!-- inputタグの「id属性」の値と同じにする事でラベルのテキストとラジオボタンを関連づけることができる -->
-                     <input type="radio" id="q1-1" class name="" value="">
+                     <input type="radio" id="q1-1" class name="q1" value="" onclick="q1Change();" >
                      <label for="q1-1" class="radio">そのまま利用する</label>
-                     <input type="radio" id="q1-2" class name="" value="">
+                     <input type="radio" id="q1-2" class name="q1" value="" onclick="q1Change();" >
                      <label for="q1-2" class="radio">新規で購入する</label>
+                     <!-- 質問事項1に関するJSの外部読み込み -->
+                       <script src="JS/sim_shindan_top.js"></script>
                    </div>
              </div>
              <!-- クエスチョン２(パターン1) -->
-             <div id="q2-1" class="q" style="display: block;">
+             <div id="q2-1" class="q" style="display: none;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">2</span>
@@ -72,18 +74,20 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="fourColumn">
-                     <input type="radio" id="q2-1-1" class name="" value="">
+                     <input type="radio" id="q2-1-1" class name="q2" value="" onclick="q2_1Change();" >
                      <label for="q2-1-1" class="radio">docomo</label>
-                     <input type="radio" id="q2-1-2" class name="" value="">
+                     <input type="radio" id="q2-1-2" class name="q2" value="" onclick="q2_1Change();">
                      <label for="q2-1-2" class="radio">au</label>
-                     <input type="radio" id="q2-1-3" class name="" value="">
+                     <input type="radio" id="q2-1-3" class name="q2" value="" onclick="q2_1Change();">
                      <label for="q2-1-3" class="radio">SoftBank</label>
-                     <input type="radio" id="q2-1-4" class name="" value="">
+                     <input type="radio" id="q2-1-4" class name="q2" value="" onclick="q2_1Change();">
                      <label for="q2-1-4" class="radio">その他(ガラケー)</label>
+                     <!-- 質問事項2に関するJSの外部読み込み -->
+                       <script src="JS/sim_shindan_top.js"></script>
                    </div>
              </div>
              <!-- クエスチョン２(パターン2) -->
-             <div id="q2-2" class="q" style="display: block;">
+             <div id="q2-2" class="q" style="display: none;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">2</span>
@@ -91,14 +95,16 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
-                     <input type="radio" id="q2-2-1" class name="" value="">
+                     <input type="radio" id="q2-2-1" class name="q2" value="" onclick="q2_2Change();">
                      <label for="q2-2-1" class="radio">iPhone</label>
-                     <input type="radio" id="q2-2-2" class name="" value="">
+                     <input type="radio" id="q2-2-2" class name="q2" value="" onclick="q2_2Change();">
                      <label for="q2-2-2" class="radio">Android</label>
+                     <!-- 質問事項2に関するJSの外部読み込み -->
+                       <script src="JS/sim_shindan_top.js"></script>
                    </div>
              </div>
              <!-- クエスチョン３ -->
-             <div id="q3" class="q" style="display: block;">
+             <div id="q3" class="q" style="display: none;">
                <h2>
                  <!-- 質問内容 -->
                  <span class="number">3</span>
@@ -114,7 +120,7 @@
                        <li>ネットやSNSをほとんど利用しない</li>
                      </ul>
                    </div>
-                   <input type="radio" id="q3-1" class name="" value="">
+                   <input type="radio" id="q3-1" class name="q3" value="" onclick="q3Change();">
                    <label for="q3-1" class="radio">~3GB</label>
                    <!-- ボタン2 -->
                    <div>
@@ -123,17 +129,17 @@
                        <li>動画はあまり観ない</li>
                      </ul>
                    </div>
-                   <input type="radio" id="q3-2" class name="" value="">
+                   <input type="radio" id="q3-2" class name="q3" value="" onclick="q3Change();">
                    <label for="q3-2" class="radio">~9GB</label>
                    <!-- ボタン3 -->
                    <div>
-                     <ul class style="display: block;">
+                     <ul class>
                        <li>ネットやSNSを頻繁に利用する</li>
                        <li>動画を観る機会が多い</li>
                        <li>家ではWiFiを使用する</li>
                      </ul>
                    </div>
-                   <input type="radio" id="q3-3" class name="" value="">
+                   <input type="radio" id="q3-3" class name="q3" value="" onclick="q3Change();">
                    <label for="q3-3" class="radio">~14GB</label>
                    <!-- ボタン4 -->
                    <div>
@@ -142,13 +148,14 @@
                        <li>WiFiは使用しないことが多い</li>
                      </ul>
                    </div>
-                   <input type="radio" id="q3-4" class name="" value="">
+                   <input type="radio" id="q3-4" class name="q3" value="" onclick="q3Change();">
                    <label for="q3-4" class="radio">14GB~</label>
+                  <script src="JS/sim_shindan_top.js"></script>
                </div>
 
              </div>
              <!-- クエスチョン４ -->
-             <div id="q4" class="q" style="display: block;">
+             <div id="q4" class="q" style="display: none;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">4</span>
@@ -156,14 +163,15 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
-                     <input type="radio" id="q4-1" class name="" value="">
+                     <input type="radio" id="q4-1" class name="q4" value="" onclick="q4Change();">
                      <label for="q4-1" class="radio">利用する（音声SIM）</label>
-                     <input type="radio" id="q4-2" class name="" value="">
+                     <input type="radio" id="q4-2" class name="q4" value="" onclick="q4Change();">
                      <label for="q4-2" class="radio">利用しない（データSIM）</label>
+                     <script src="JS/sim_shindan_top.js"></script>
                    </div>
              </div>
              <!-- クエスチョン５ -->
-             <div id="q5" class="q" style="display: block;">
+             <div id="q5" class="q" style="display: none;">
                <!-- 質問内容 -->
                    <h2>
                      <span class="number">5</span>
@@ -171,15 +179,16 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
-                     <input type="radio" id="q5-1" class name="" value="">
+                     <input type="radio" id="q5-1" class name="q5" value="" onclick="q5Change();">
                      <label for="q5-1" class="radio">利用する</label>
-                     <input type="radio" id="q5-2" class name="" value="">
+                     <input type="radio" id="q5-2" class name="q5" value="" onclick="q5Change();">
                      <label for="q5-2" class="radio">利用しない</label>
+                      <script src="JS/sim_shindan_top.js"></script>
                    </div>
              </div>
              <!-- 診断結果のボタン -->
              <div id="a" class="button">
-               <input type="submit" id="" class="" value="診断結果を見る" disabled>
+               <input type="submit" id="reslut" class="" value="診断結果を見る" disabled>
                <!-- disabled=jQueryの記述？ボタンを押せないようにする -->
              </div>
            </section>
