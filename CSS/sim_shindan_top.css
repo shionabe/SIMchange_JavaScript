@@ -16,6 +16,12 @@ header{
   top:0;
 }
 
+
+/*  */
+/* .attention{
+  position: relative;
+} */
+
 /* ヘッダー直下のトップセクション */
 .top_wrapper{
   background-color:#AEC4E5;
@@ -42,6 +48,7 @@ header{
   width: 100%;
   /* 設問1とヘッダー直下の幅を変える */
   margin-top:180px;
+  position: relative;
 }
 /* 質問事項の背景を白にする */
 .q{
@@ -60,6 +67,7 @@ header{
   display: none;
 }
 
+/* ボタンをレスポンシブ対応にする */
 .twoColumn label{
   float: left;
   width:50%;
@@ -69,7 +77,7 @@ header{
   width:50%;
 }
 
-
+/* 質問事項3のボタンをレスポンシブに対応する */
 .q3block{
   float: left;
   width:50%;
@@ -95,7 +103,6 @@ label {
 
 }
 
-
 .flex-list{
   display: flex
 }
@@ -120,3 +127,18 @@ label:hover {
   font-weight:bold;
   cursor:pointer;
 }
+
+
+.flex-list{
+  display: flex
+
+}
+
+ul{
+  list-style: none;
+}
+/*
+link{
+  display:inline-block;
+  float: left;
+} */
