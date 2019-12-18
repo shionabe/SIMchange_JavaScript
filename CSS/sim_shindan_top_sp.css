@@ -2,5 +2,18 @@
 
 
 @media (max-width:670px) {
+  .twoColumn label{
+    float: left;
+    width:100%;
+  }
+  .fourColumn label{
+    float: left;
+    width:100%;
+  }
+
+  .q3block{
+    float: left;
+    width:100%;
+  }
 
 }
