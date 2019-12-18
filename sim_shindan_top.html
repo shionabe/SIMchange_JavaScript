@@ -44,7 +44,7 @@
            </ul>
          </section>
          <!-- メインボディ送信フォームボタン -->
-         <form action="/sim_shindan_result.html">
+         <form name="result" action="sim_shindan_result.html">
            <!-- クエスチョンセクション -->
            <section class="question_wrapper">
              <!-- クエスチョン１ -->
@@ -188,7 +188,9 @@
              </div>
              <!-- 診断結果のボタン -->
              <div id="a" class="button">
-               <input type="submit" id="reslut" class="" value="診断結果を見る" disabled>
+               <input type="submit" id="reslut" name="reslut_btn" value="診断結果を見る" disabled>
+               <!-- <input type="text" id="reslut"> -->
+               <!-- <button class name="reslut_btn"  disabled>診断結果を見る</button> -->
                <!-- disabled=jQueryの記述？ボタンを押せないようにする -->
              </div>
            </section>
