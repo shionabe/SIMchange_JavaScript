@@ -7,21 +7,21 @@ function q1Change(){
    document.getElementById('q2-1').style.display = "";
    document.getElementById('q2-2').style.display = "none";
     // var target = "#" + $(this).html();
-    var target = ".question_wrapper";
-    var th = $(target).position();
-    var sh = $(".question_wrapper").scrollTop();
-    var pos = th.top + sh + 1;
-    // var pos =  100;
-    // alert(pos);
-    // $(".question_wrapper").animate({
-    //   scrollTop: pos
-    // },"slow", "swing");
-    $(".question_wrapper").animate({ scrollTop: pos}, 500, 'swing');
-    // $('html, body').scrollTop(pos);
+    // var target = ".question_wrapper";
+    // var th = $(target).position();
+    // var sh = $(".question_wrapper").scrollTop();
+    // var pos = th.top + sh + 1;
+    // // var pos =  100;
+    // // alert(pos);
+    // // $(".question_wrapper").animate({
+    // //   scrollTop: pos
+    // // },"slow", "swing");
+    // $(".question_wrapper").animate({ scrollTop: pos}, 500, 'swing');
+　$("html,body").animate({scrollTop:$('#q2-1').offset().top});
   }else if(radio[1].checked) {
    document.getElementById('q2-1').style.display = "none";
    document.getElementById('q2-2').style.display = "";
-
+   $("html,body").animate({scrollTop:$('#q2-2').offset().top});
 }
 }
 // window.onload = entryChange1;
