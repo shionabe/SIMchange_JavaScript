@@ -8,38 +8,82 @@
 
 
 /* ヘッダー */
-header{
-  background-color:#78BBE6;
-  position:fixed;
-  height:40px;
-  width:100%;
-  top:0;
+header img{
+  width: 30%;
+  height: auto;
 }
 
-
-/*  */
-/* .attention{
-  position: relative;
-} */
-
-/* ヘッダー直下のトップセクション */
-.top_wrapper{
-  background-color:#AEC4E5;
+header {
+  width: 100%;
+  top:0;
+  height: 120px;
   position:fixed;
-  height:100px;
+  background-color:#ffd372;
+  opacity:0.5;
+}
+
+/* 上部 */
+.main-wrapper{
+  background-color:#ffd372;
+}
+/* 上部タイトル文字の大きさ */
+.title-wrapper h2{
+  /* font-size: 300%; */
+  /* フォントサイズを親要素ではなくスクリーンサイズにリサイズしてくれる */
+  font-size: 5vw;
+  margin:10px 0 ;
+  font-family: 'Yu Gothic UI','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.title-wrapper h1{
+  /* font-size: 400%; */
+  font-size: 10vw;
+  margin:10px 0 ;
+  font-family: 'Yu Gothic UI','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+/* 上部左 */
+.left-wrapper{
+  width: 50%;
+  background-color:#ffd372;
+  display: inline-block;
+  float: left;
+}
+/* 上部右の画像 */
+img.right_img{
+  width: 100%;
+  height: auto;
+}
+
+/* 上部右 */
+.right-wrapper{
+  width: 50%;
+  background-color:#ffd372;
+  display: inline-block;
+}
+
+/* 上部のボタン */
+.btn input[type="radio"]{
+ display: none;
+}
+/* ボタンをレスポンシブ対応にする */
+.btn label{
+  float: left;
   width:100%;
-  top:40px;
-  margin-bottom:40px;
+  font-size: 5vw;
+}
+
+.main-wrapper{
+  margin-top: 120px;
+  background-color:#ffd372;
 }
 
 /* 最下部の固定バナーセクション */
-
 .fix_wrapper{
   background-color:#C0C0C0;
   position:fixed;
   width: 100%;
   height:60px;
   bottom: 0;
+  opacity:0.5;
 }
 
 /* 質問項目を囲むセクション */
@@ -47,17 +91,44 @@ header{
   background-color:#E9E9E9;
   width: 100%;
   /* 設問1とヘッダー直下の幅を変える */
-  margin-top:180px;
+  /* margin-top:180px; */
   position: relative;
 }
 /* 質問事項の背景を白にする */
-.q{
-  /* background-color:#FFFF; */
-  margin: 5% 5%;
-}
 
 .q1{
-  background-color:#FFFF;
+  margin-bottom: 20%;
+  background-color:#ffff;
+}
+.q2{
+  margin-bottom: 23%;
+  background-color:#ffff;
+}
+.q3{
+  margin-bottom: 50%;
+  background-color:#ffff;
+}
+.q4{
+  margin-bottom: 20%;
+  background-color:#ffff;
+}
+.q5{
+  margin-bottom: 20%;
+  background-color:#ffff;
+}
+
+h2{
+  font-size: 3vw;
+}
+
+p.number{
+  /* margin: 10px 50%; */
+  text-align: center;
+  /* margin-top: 150px; */
+}
+p.text{
+  /* margin: 10px 50%; */
+  text-align: center;
 }
 
  /* ラジオボタンを非表示にする */
@@ -84,6 +155,7 @@ header{
 .q3block{
   float: left;
   width:50%;
+  font-size: 2vw;
 }
 
 .q3block label{
@@ -94,53 +166,114 @@ header{
 
 label {
   display: inline-block;
-  padding:18px 0;
+  padding:9px 0;
+  margin:1% 0;
 	vertical-align:middle;
 	box-sizing:border-box;
-	border:2px solid #16A0E8;
+	border:2px solid #f69e64;
 	border-radius:8px;
 	text-align:center;
 	font-weight:bold;
+  background-color:#fbf2d9;
 	cursor:pointer;
 
   /* float: left; */
 
 }
 
-.flex-list{
-  display: flex
+/* 診断結果のボタンのデザイン */
+.button{
+  width:80%;
+  padding:9px 0;
+  margin:1% 0;
+	vertical-align:middle;
+	box-sizing:border-box;
+	border:2px solid #fbf2d9;
+	border-radius:8px;
+	text-align:center;
+	font-weight:bold;
+  font-size: 3vw;
+  background-color:#fbf2d9;
+	cursor:pointer;
+  margin-left:10%;
 }
-
-input[type="radio"]:checked + label {
-  background: #AEC4E5;/* マウス選択時の背景色を指定する */
+/* 診断結果のボタンマウスオーバー時のデザイン */
+.button:hover{
+  background: #f69e64;/* マウス選択時の背景色を指定する */
   color: #FFF; /* マウス選択時のフォント色を指定する */
 }
 
+/* 注意書きに関する */
+.attention{
+  margin: 10% 5%;
+  background: #fff;
+  padding:5% 5%;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+.attention li{
+  font-size:13px;
+  color:#57544e;
+}
+
+.attention h3,h4,h5{
+  color:#57544e;
+}
+
+.iso{
+  margin: 5% 5%;
+  background: #fff;
+  padding:5% 5%;
+  font-size:13px;
+  color:#57544e;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+.iso h5{
+  color:#57544e;
+
+}
+
+.info{
+  background-color:#E9E9E9;
+  width: 100%;
+
+}
+
+/* ボタンクリック */
+input[type="radio"]:checked + label {
+  background: #f69e64;/* マウス選択時の背景色を指定する */
+  color: #FFF; /* マウス選択時のフォント色を指定する */
+}
+
+/* ボタンマウスオーバー */
 label:hover {
-  background-color: #78BBE6;/* マウスオーバー時の背景色を指定する */
+  background-color: #f69e64;/* マウスオーバー時の背景色を指定する */
 }
 
-.reslut_btn{
-  padding:18px 0;
-  display:inline-block;
-  vertical-align:middle;
-  box-sizing:border-box;
-  border:2px solid #ffc0cb;
-  border-radius:8px;
-  text-align:center;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-
+/* フッター */
 .flex-list{
-  display: flex
-
+  display: flex;
+  font-size: 13px;
+  width:350px;
+  margin: 0 auto;
 }
+
+footer{
+  font-size: 13px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 10%;
+  color:#57544e;
+}
+
 
 ul{
   list-style: none;
+  display: inline-block;
 }
+
+
 /*
 link{
   display:inline-block;

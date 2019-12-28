@@ -1,0 +1,94 @@
+
+
+
+/* 全ての要素に対して管理しやすいようにする */
+*{
+  box-sizing:border-box;
+  /* display: block; */
+}
+
+
+/* ヘッダー */
+header img{
+  width: 30%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color:#ffd372;
+}
+
+.main-wrapper{
+  background-color:#ffd372;
+}
+
+.title-wrapper h2{
+  font-size: 300%;
+  margin:10px 0 ;
+}
+.title-wrapper h1{
+  font-size: 400%;
+  margin:10px 0 ;
+}
+
+
+.left-wrapper{
+  width: 50%;
+  background-color:#ffd372;
+  display: inline-block;
+  float: left;
+}
+
+img.right_img{
+  width: 100%;
+  height: auto;
+  
+}
+
+.right-wrapper{
+  width: 50%;
+  background-color:#ffd372;
+  display: inline-block;
+}
+
+label {
+  /* display: inline-block; */
+  padding:18px 0;
+	vertical-align:middle;
+	box-sizing:border-box;
+	border:2px solid #16A0E8;
+	border-radius:8px;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+input[type="radio"]:checked + label {
+  background: #AEC4E5;/* マウス選択時の背景色を指定する */
+  color: #FFF; /* マウス選択時のフォント色を指定する */
+}
+
+label:hover {
+  background-color: #78BBE6;/* マウスオーバー時の背景色を指定する */
+}
+
+
+/* ラジオボタンを非表示にする */
+.btn input[type="radio"]{
+ display: none;
+}
+
+
+/* ボタンをレスポンシブ対応にする */
+.btn label{
+  float: left;
+  width:100%;
+}
+
+
+/* .right-wrapper img{
+  width: 30%;
+  height: auto;
+} */

@@ -1,5 +1,12 @@
 
 
+
+// トップのスタートボタンクリック時のイベント
+function topChange(){
+  radio = document.getElementsByName('top')
+  document.getElementById('q1').style.display = "";
+  $("html,body").animate({scrollTop:$('#q1').offset().top});
+}
 // 質問事項1
 function q1Change(){
   radio = document.getElementsByName('q1')
