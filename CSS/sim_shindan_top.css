@@ -191,8 +191,7 @@ label {
 .button{
   width:80%;
   padding:9px 0;
-  margin-right:10%;
-  margin-left:10%;
+  margin: 10% 10%;
 	vertical-align:middle;
 	box-sizing:border-box;
 	border:2px solid #fbf2d9;
