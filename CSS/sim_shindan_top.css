@@ -88,13 +88,18 @@ img.right_img{
 
 /* 質問項目を囲むセクション */
  .question_wrapper{
-  background-color:#E9E9E9;
-  width: 100%;
-  /* 設問1とヘッダー直下の幅を変える */
-  /* margin-top:180px; */
+  background-color:#fff;
+  width: 80%;
+  margin: 0 auto;
   position: relative;
+
 }
 /* 質問事項の背景を白にする */
+
+.content_wrapper{
+  background-color:#ffd372;
+  width: 100%;
+}
 
 .q1{
   margin-bottom: 20%;
@@ -145,6 +150,7 @@ p.text{
 .twoColumn label{
   float: left;
   width:50%;
+
 }
 .fourColumn label{
   float: left;
@@ -155,7 +161,7 @@ p.text{
 .q3block{
   float: left;
   width:50%;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .q3block label{
@@ -185,7 +191,8 @@ label {
 .button{
   width:80%;
   padding:9px 0;
-  margin:1% 0;
+  margin-right:10%;
+  margin-left:10%;
 	vertical-align:middle;
 	box-sizing:border-box;
 	border:2px solid #fbf2d9;
@@ -195,8 +202,8 @@ label {
   font-size: 3vw;
   background-color:#fbf2d9;
 	cursor:pointer;
-  margin-left:10%;
 }
+
 /* 診断結果のボタンマウスオーバー時のデザイン */
 .button:hover{
   background: #f69e64;/* マウス選択時の背景色を指定する */

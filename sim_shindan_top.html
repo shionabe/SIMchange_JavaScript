@@ -32,6 +32,7 @@
        </header>
        <!-- メインボディ -->
        <main>
+
          <!-- ボディ上部 -->
          <div class="main-wrapper">
              <!-- 上部左 -->
@@ -68,7 +69,7 @@
          <!-- メインボディ送信フォームボタン -->
          <form name="result" action="sim_shindan_result.html">
            <!-- クエスチョンセクション -->
-           <!-- <section class="question_wrapper"> -->
+          <div class="content_wrapper">
             <div class="question_wrapper">
              <!-- クエスチョン１ -->
              <div id="q1" class="q1" style="display: none;">
@@ -212,13 +213,14 @@
              </div>
              <!-- 診断結果のボタン -->
 
-               <input type="submit" id="result" name="result_btn" value="診断結果を見る" disabled class="button">
+               <input type="submit" id="result" name="result_btn" value="診断結果を見る"  class="button" disabled>
                <!--<input type="text" id="result"> -->
                <!-- <button class name="reslut_btn"  disabled>診断結果を見る</button> -->
                <!-- disabled=jQueryの記述？ボタンを押せないようにする-->
 
            <!-- </section> -->
            </div>
+         </div>
          </form>
          <!-- インフォセクション -->
          <section class="info">
