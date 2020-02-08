@@ -1,0 +1,53 @@
+
+
+
+/* 全ての要素に対して管理しやすいようにする */
+*{
+  box-sizing:border-box;
+  /* display: block; */
+}
+
+body{
+  padding:0;
+  margin:0;
+}
+
+/* ヘッダー */
+header img{
+  width: 30%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  top:0;
+  height:100px;
+  position:fixed;
+  background-color:#ffd372;
+  opacity:0.5;
+}
+
+nav{
+  margin-top:100px;
+}
+
+main{
+  background-color:#C0C0C0;
+}
+
+.nav_tie{
+  height:100px;
+  background-color:#ffd372;
+  color: #fff;
+  text-align: center;
+
+}
+
+.nav_bottom{
+  display: flex;
+}
+
+.result_content{
+  background-color: #fff;
+  margin:auto 3%;
+}

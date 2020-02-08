@@ -6,6 +6,10 @@
   /* display: block; */
 }
 
+body{
+  padding:0;
+  margin:0;
+}
 
 /* ヘッダー */
 header img{
@@ -16,7 +20,7 @@ header img{
 header {
   width: 100%;
   top:0;
-  height: 120px;
+  height:200px;
   position:fixed;
   background-color:#ffd372;
   opacity:0.5;

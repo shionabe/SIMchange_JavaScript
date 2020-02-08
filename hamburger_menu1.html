@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <!-- 文字 -->
+    <meta charset="UTF-8">
+    <!-- viewportを読み込む=メディアクエリ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- サイトの権限者に関する記述 -->
+    <meta name="name" content="siioko">
+     <!-- サイト説明に関する記述 -->
+    <meta name="description" content="ここにサイト説明">
+    <!-- サイトのキーワードに関する記述 -->
+    <meta name="keywords" content="ここにキーワード">
+    <title>ここにサイトタイトル</title>
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" href="CSS/hamburger_menu1.css">
+    <!-- レスポンシブ・タブレット1000px以下の時スタイルシート -->
+     <!-- <link rel="stylesheet" href="ここにCSS"> -->
+    <!-- レスポンシブ・スマホ670px以下の時スタイルシート -->
+     <!-- <link rel="stylesheet" href="ここにCSS"> -->
+    <!-- ブートストラップアイコンに関する記述 -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- hamburgerメニューで使用するフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- jQueryに関する記述 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <!-- トップページ -->
+  <body>
+    <!-- ヘッダー -->
+    <header>
+
+    </header>
+
+    <main>
+      <!-- メニュー -->
+      <div id="menu">
+        <ul>
+          <li>MENU</li>
+          <li>MENU</li>
+          <li>MENU</li>
+          <li>MENU</li>
+        </ul>
+      </div>
+      <!-- メイン -->
+      <div id="main">
+        <i class="fa fa-bars" id="show"></i>
+        <h1>Hello</h1>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+      </div>
+      <!-- ハンバーガーメニューのアイコンアニメーション -->
+      <script>
+        (function() {
+          'use strict';
+
+          var show = document.getElementById('show');
+          var main = document.getElementById('main');
+
+
+           show.addEventListener('click', function() {
+            // if (main.className === 'menu-open') {
+            //   main.className = '';
+            // } else {
+            //   main.className = 'menu-open';
+            // }
+            main.className = main.className === 'menu-open' ? '' : 'menu-open';
+          });
+
+          })();
+        </script>
+
+      </script>
+    </main>
+    <!-- フッター -->
+    <footer>
+
+    </footer>
+
+  </body>
+
+  </html>

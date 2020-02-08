@@ -67,7 +67,7 @@
            </ul>
          </section>
          <!-- メインボディ送信フォームボタン -->
-         <form name="result" action="sim_shindan_result.html">
+         <form name="result" action="sim_shindan_result.php">
            <!-- クエスチョンセクション -->
           <div class="content_wrapper">
             <div class="question_wrapper">
@@ -81,9 +81,9 @@
                    <!-- ボタン -->
                    <div class="twoColumn">
                      <!-- inputタグの「id属性」の値と同じにする事でラベルのテキストとラジオボタンを関連づけることができる -->
-                     <input type="radio" id="q1-1" class name="q1" value="" onclick="q1Change();" >
+                     <input type="radio" id="q1-1" class name="q1" value="そのまま利用する" onclick="q1Change();" >
                      <label for="q1-1" class="radio">そのまま利用する</label>
-                     <input type="radio" id="q1-2" class name="q1" value="" onclick="q1Change();" >
+                     <input type="radio" id="q1-2" class name="q1" value="新規で購入する" onclick="q1Change();" >
                      <label for="q1-2" class="radio">新規で購入する</label>
                      <!-- 質問事項1に関するJSの外部読み込み -->
                        <script src="JS/sim_shindan_top.js"></script>
@@ -98,13 +98,13 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="fourColumn">
-                     <input type="radio" id="q2-1-1" class name="q2" value="" onclick="q2_1Change();" >
+                     <input type="radio" id="q2-1-1" class name="q21" value="docomo" onclick="q2_1Change();" >
                      <label for="q2-1-1" class="radio">docomo</label>
-                     <input type="radio" id="q2-1-2" class name="q2" value="" onclick="q2_1Change();">
+                     <input type="radio" id="q2-1-2" class name="q21" value="au" onclick="q2_1Change();">
                      <label for="q2-1-2" class="radio">au</label>
-                     <input type="radio" id="q2-1-3" class name="q2" value="" onclick="q2_1Change();">
+                     <input type="radio" id="q2-1-3" class name="q21" value="SoftBank" onclick="q2_1Change();">
                      <label for="q2-1-3" class="radio">SoftBank</label>
-                     <input type="radio" id="q2-1-4" class name="q2" value="" onclick="q2_1Change();">
+                     <input type="radio" id="q2-1-4" class name="q21" value="その他(ガラケー)" onclick="q2_1Change();">
                      <label for="q2-1-4" class="radio">その他(ガラケー)</label>
                      <!-- 質問事項2に関するJSの外部読み込み -->
                        <script src="JS/sim_shindan_top.js"></script>
@@ -119,9 +119,9 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
-                     <input type="radio" id="q2-2-1" class name="q2" value="" onclick="q2_2Change();">
+                     <input type="radio" id="q2-2-1" class name="q22" value="iPhone" onclick="q2_2Change();">
                      <label for="q2-2-1" class="radio">iPhone</label>
-                     <input type="radio" id="q2-2-2" class name="q2" value="" onclick="q2_2Change();">
+                     <input type="radio" id="q2-2-2" class name="q22" value="Android" onclick="q2_2Change();">
                      <label for="q2-2-2" class="radio">Android</label>
                      <!-- 質問事項2に関するJSの外部読み込み -->
                        <script src="JS/sim_shindan_top.js"></script>
@@ -143,8 +143,8 @@
                        <li>メールやLINEはテキストが中心</li>
                        <li>ネットやSNSをほとんど利用しない</li>
                      </ul>
-                   <input type="radio" id="q3-1" class name="q3" value="" onclick="q3Change();">
-                   <label for="q3-1" class="radio">~3GB</label>
+                   <input type="radio" id="q3-1" class name="q3" value="1" onclick="q3Change();">
+                   <label for="q3-1" class="radio">1GB</label>
                    </div>
                    <!-- ボタン2 -->
                    <div class="q3block">
@@ -152,8 +152,8 @@
                        <li>ネットやSNSを1日1～2時間ほど利用する</li>
                        <li>動画はあまり観ない</li>
                      </ul>
-                     <input type="radio" id="q3-2" class name="q3" value="" onclick="q3Change();">
-                     <label for="q3-2" class="radio">~9GB</label>
+                     <input type="radio" id="q3-2" class name="q3" value="3" onclick="q3Change();">
+                     <label for="q3-2" class="radio">3GB</label>
                    </div>
                    <!-- ボタン3 -->
                    <div class="q3block">
@@ -162,8 +162,8 @@
                        <li>動画を観る機会が多い</li>
                        <li>家ではWiFiを使用する</li>
                      </ul>
-                     <input type="radio" id="q3-3" class name="q3" value="" onclick="q3Change();">
-                     <label for="q3-3" class="radio">~14GB</label>
+                     <input type="radio" id="q3-3" class name="q3" value="9" onclick="q3Change();">
+                     <label for="q3-3" class="radio">9GB</label>
                    </div>
                    <!-- ボタン4 -->
                    <div  class="q3block">
@@ -172,7 +172,7 @@
                        <li>WiFiは使用しないことが多い</li>
                        <br>
                      </ul>
-                     <input type="radio" id="q3-4" class name="q3" value="" onclick="q3Change();">
+                     <input type="radio" id="q3-4" class name="q3" value="14" onclick="q3Change();">
                      <label for="q3-4" class="radio">14GB~</label>
                    </div>
                   <script src="JS/sim_shindan_top.js"></script>
@@ -188,9 +188,9 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
-                     <input type="radio" id="q4-1" class name="q4" value="" onclick="q4Change();">
+                     <input type="radio" id="q4-1" class name="q4" value="音声SIM" onclick="q4Change();">
                      <label for="q4-1" class="radio">利用する（音声SIM）</label>
-                     <input type="radio" id="q4-2" class name="q4" value="" onclick="q4Change();">
+                     <input type="radio" id="q4-2" class name="q4" value="データ専用SMS" onclick="q4Change();">
                      <label for="q4-2" class="radio">利用しない（データSIM）</label>
                      <script src="JS/sim_shindan_top.js"></script>
                    </div>
@@ -204,9 +204,9 @@
                    </h2>
                    <!-- ボタン -->
                    <div class="twoColumn">
-                     <input type="radio" id="q5-1" class name="q5" value="" onclick="q5Change();">
+                     <input type="radio" id="q5-1" class name="q5" value="あり" onclick="q5Change();">
                      <label for="q5-1" class="radio">利用する</label>
-                     <input type="radio" id="q5-2" class name="q5" value="" onclick="q5Change();">
+                     <input type="radio" id="q5-2" class name="q5" value="なし" onclick="q5Change();">
                      <label for="q5-2" class="radio">利用しない</label>
                       <script src="JS/sim_shindan_top.js"></script>
                    </div>

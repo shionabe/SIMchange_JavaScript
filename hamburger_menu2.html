@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <!-- 文字 -->
+    <meta charset="UTF-8">
+    <!-- viewportを読み込む=メディアクエリ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- サイトの権限者に関する記述 -->
+    <meta name="name" content="siioko">
+     <!-- サイト説明に関する記述 -->
+    <meta name="description" content="ここにサイト説明">
+    <!-- サイトのキーワードに関する記述 -->
+    <meta name="keywords" content="ここにキーワード">
+    <title>ここにサイトタイトル</title>
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" type="text/css" href="CSS/hamburger_menu2.css">
+    <!-- レスポンシブ・タブレット1000px以下の時スタイルシート -->
+     <link rel="stylesheet" href="ここにCSS">
+    <!-- レスポンシブ・スマホ670px以下の時スタイルシート -->
+     <link rel="stylesheet" href="ここにCSS">
+    <!-- ブートストラップアイコンに関する記述 -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- hamburgerメニューで使用するフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- jQueryに関する記述 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+
+  <!-- トップページ -->
+  <body class="menu-open">
+
+      <!-- メイン第１層目 -->
+
+        <i class="fa fa-bars" id="show"></i>
+        <h1>Hello</h1>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+        <p>ああああああああああああああああああああああ</p>
+
+      <!-- メイン第２層目 黒いカバー -->
+      <div id="cover">
+
+      </div>
+      <!-- メイン第２層目 メニューアイコン -->
+
+      <!-- ハンバーガーメニューのアイコンアニメーション -->
+      <div id="menu">
+        <i class="fa fa-times" id="hide"></i>
+        <ul>
+          <li>MENU</li>
+          <li>MENU</li>
+          <li>MENU</li>
+          <li>MENU</li>
+        </ul>
+      </div>
+
+      <script>
+      (function() {
+        'use strict';
+
+        var show = document.getElementById('show');
+        var hide = document.getElementById('hide');
+
+        show.addEventListener('click', function() {
+          document.body.className = 'menu-open';
+        });
+
+        hide.addEventListener('click', function() {
+          document.body.className = '';
+        });
+      })();
+      </script>
+      
+  </body>
+
+  </html>
